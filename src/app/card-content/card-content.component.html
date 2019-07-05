@@ -1,0 +1,40 @@
+<div class="cardContent container-fluid">
+
+  <div class="jumbotron">
+    <h1 id="notSelected" *ngIf="card === null" class="display-6">No card has been selected</h1>
+    <h1 id="cardTitle" *ngIf="card != null" class="display-6">{{card.name}}</h1>
+  </div>
+
+  <div id="content">
+    <div class="row">
+      <div *ngIf="card != null" class="col-12">
+
+        <img [src]="imgSrc+card.name">
+
+        <h4 class="titles">Text</h4>
+        <p>{{card.text}}</p>
+
+        <span *ngIf="card.type != null">
+          <h4 class="titles">Types</h4>
+          <p>{{card.type}}</p>
+        </span>
+
+        <span *ngIf="card.atk != null">
+          <h4 class="titles">Atk</h4>
+          <p>{{card.atk}}</p>
+        </span>
+
+        <span *ngIf="card.def != null">
+          <h4 class="titles">Def</h4>
+          <p>{{card.def}}</p>
+        </span>
+
+      </div>
+
+      <div *ngIf="card === null">
+        <p style="margin:20px;">Please select a card from the deck to view its contents.</p>
+      </div>
+
+    </div>
+  </div>
+</div>

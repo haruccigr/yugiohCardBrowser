@@ -1,0 +1,55 @@
+.cardContent{
+    min-height: 1000px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(82, 82, 82), rgb(32, 32, 32));
+    color: whitesmoke;
+}
+
+img{
+   float: left;
+   margin: 0px 20px;
+   box-shadow: 0px 0px 10px yellow;
+   border-radius: 5px;
+   height: 75%;
+   object-fit: contain;
+}
+
+img:hover{
+    box-shadow: 0px 0px 10px orangered;
+}
+
+.jumbotron{
+    text-align: center;
+    border-radius: 25px;
+    margin:20px;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.835);
+    color: rgba(255, 217, 0, 0.589);
+}
+
+#cardTitle{
+    color: rgba(255, 166, 0, 0.89);
+}
+
+#content{
+    height: 100%;
+    margin: 0px;
+    padding: 20px;
+    box-shadow: 0 -5px 5px -5px rgb(233, 223, 194);
+}
+
+.titles{
+    color: rgba(255, 231, 175, 0.63);
+}
+
+p{
+    color: rgb(229, 238, 220);
+}
+
+h4{
+    margin-bottom:2px;
+    margin-top:5px;
+}

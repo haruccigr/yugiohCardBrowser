@@ -1,0 +1,7 @@
+<div class="navPanel">
+    <h2 id="navTitle">Cards on deck</h2>
+    <div [class.active]="active[i]" *ngFor="let item of deck; let i=index" class="cardNav" (click)="toggleView(item.data,i)">
+       {{item?.data.name}} 
+       <span class="cardType"> {{item?.data.card_type}} </span>
+    </div>
+</div>
